@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"/>
+  <!-- noUIslider -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/11.1.0/nouislider.min.css" />
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Materialize Sandbox</title>
+</head>
+
+<body>
+  <div class="container">
+    <!-- link to css -->
+    <div class="left">
+      <a href="index2.html" class="btn-floating red btn-large waves-effect">
+        <i class="material-icons large">arrow_back</i>
+      </a><br/>
+      
+      <div class="center-align">Javascript</div>
+    </div>
+  
+    <div class="center-align"><h1>FORMS</h1></div>
+
+
+
+    <h3>NoUISlider</h3>
+    <div id="test-slider"></div>
+
+    <h3>HTML5 Range</h3>
+    <form action="#">
+      <p class="range-field">
+        <input type="range" id="test5" min="0" max="100" />
+      </p>
+    </form>
+
+    <h3>AUTOCOMPLETE</h3>
+
+    <div class="row">
+      <div class="col s12">
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">textsms</i>
+            <input type="text" id="autocomplete-input" class="autocomplete">
+            <label for="autocomplete-input">Autocomplete</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3>CHECKBOXES</h3>
+
+<form action="#">
+  <p>
+    <label>
+      <input type="checkbox" />
+      <span>Red</span>
+    </label>
+  </p>
+  <p>
+    <label>
+      <input type="checkbox" checked="checked" />
+      <span>Yellow</span>
+    </label>
+  </p>
+  <p>
+    <label>
+      <input type="checkbox" class="filled-in" checked="checked" />
+      <span>Filled in</span>
+    </label>
+  </p>
+  <p>
+    <label>
+      <input id="indeterminate-checkbox" type="checkbox" />
+      <span>Indeterminate Style</span>
+    </label>
+  </p>
+  <p>
+    <label>
+      <input type="checkbox" checked="checked" disabled="disabled" />
+      <span>Green</span>
+    </label>
+  </p>
+  <p>
+    <label>
+      <input type="checkbox" disabled="disabled" />
+      <span>Brown</span>
+    </label>
+  </p>
+</form>
+
+<h3>RADIO BUTTONS</h3>
+<form action="#">
+  <p>
+    <label>
+      <input name="group1" type="radio" checked />
+      <span>Red</span>
+    </label>
+  </p>
+  <p>
+    <label>
+      <input name="group1" type="radio" />
+      <span>Yellow</span>
+    </label>
+  </p>
+  <p>
+    <label>
+      <input class="with-gap" name="group1" type="radio" />
+      <span>Green</span>
+    </label>
+  </p>
+  <p>
+    <label>
+      <input name="group1" type="radio" disabled="disabled" />
+      <span>Brown</span>
+    </label>
+  </p>
+</form>
+
+<h3>SELECT</h3>
+<div class="input-field col s12">
+  <select>
+    <option value="" disabled selected>Choose your option</option>
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+  </select>
+  <label>Materialize Select</label>
+</div>
+
+<div class="input-field col s12">
+  <select multiple>
+    <option value="" disabled selected>Choose your option</option>
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+  </select>
+  <label>Materialize Multiple Select</label>
+</div>
+
+<div class="input-field col s12">
+  <select>
+    <optgroup label="team 1">
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+    </optgroup>
+    <optgroup label="team 2">
+      <option value="3">Option 3</option>
+      <option value="4">Option 4</option>
+    </optgroup>
+  </select>
+  <label>Optgroups</label>
+</div>
+
+<div class="input-field col s12 m6">
+  <select class="icons">
+    <option value="" disabled selected>Choose your option</option>
+    <option value="" data-icon="images/sample-1.jpg">example 1</option>
+    <option value="" data-icon="images/office.jpg">example 2</option>
+    <option value="" data-icon="images/yuna.jpg">example 3</option>
+  </select>
+  <label>Images in select</label>
+</div>
+<div class="input-field col s12 m6">
+  <select class="icons">
+    <option value="" disabled selected>Choose your option</option>
+    <option value="" data-icon="images/sample-1.jpg" class="left">example 1</option>
+    <option value="" data-icon="images/office.jpg" class="left">example 2</option>
+    <option value="" data-icon="images/yuna.jpg" class="left">example 3</option>
+  </select>
+  <label>Images in select</label>
+</div>
+
+<label>Browser Select</label>
+<select class="browser-default">
+  <option value="" disabled selected>Choose your option</option>
+  <option value="1">Option 1</option>
+  <option value="2">Option 2</option>
+  <option value="3">Option 3</option>
+</select>
+
+<h3>PICKERS</h3>
+<input type="text" class="datepicker">
+
+<h3>SWITCHES</h3>
+<div class="switch">
+  <label>
+    Off
+    <input type="checkbox">
+    <span class="lever"></span>
+    On
+  </label>
+</div>
+
+<!-- Disabled Switch -->
+<div class="switch">
+  <label>
+    Off
+    <input disabled type="checkbox">
+    <span class="lever"></span>
+    On
+  </label>
+</div>
+
+  </div><!-- container -->
+<h3>INPUTS</h3>
+<div class="row">
+  <form class="col s12">
+    <div class="row">
+      <div class="input-field col s6">
+        <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+        <label for="first_name">First Name</label>
+      </div>
+      <div class="input-field col s6">
+        <input id="last_name" type="text" class="validate">
+        <label for="last_name">Last Name</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+        <label for="disabled">Disabled</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="password" type="password" class="validate">
+        <label for="password">Password</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="email" type="email" class="validate">
+        <label for="email">Email</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        This is an inline input field:
+        <div class="input-field inline">
+          <input id="email_inline" type="email" class="validate">
+          <label for="email_inline">Email</label>
+          <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+<h3>Prefilled Input</h3>
+<div class="row">
+  <div class="input-field col s6">
+    <input value="Alvin" id="first_name2" type="text" class="validate">
+    <label class="active" for="first_name2">First Name</label>
+  </div>
+</div>
+
+<h3>Icon Prefixes</h3>
+<div class="row">
+  <form class="col s12">
+    <div class="row">
+      <div class="input-field col s6">
+        <i class="material-icons prefix">account_circle</i>
+        <input id="icon_prefix" type="text" class="validate">
+        <label for="icon_prefix">First Name</label>
+      </div>
+      <div class="input-field col s6">
+        <i class="material-icons prefix">phone</i>
+        <input id="icon_telephone" type="tel" class="validate">
+        <label for="icon_telephone">Telephone</label>
+      </div>
+    </div>
+  </form>
+</div>
+
+<h3>Custom Error or Success Messages</h3>
+<div class="row">
+  <form class="col s12">
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="email" type="email" class="validate">
+        <label for="email">Email</label>
+        <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+      </div>
+    </div>
+  </form>
+</div>
+
+<h3>Textarea</h3>
+<div class="row">
+  <form class="col s12">
+    <div class="row">
+      <div class="input-field col s12">
+        <textarea id="textarea1" class="materialize-textarea"></textarea>
+        <label for="textarea1">Textarea</label>
+      </div>
+    </div>
+  </form>
+</div>
+<!-- advanced note: When dynamically changing the value of a textarea with methods like jQuery's .val(), you must trigger an autoresize -->
+<!-- on it afterwords because .val() does not automatically trigger the events we've binded to the textarea. -->
+ <!-- $('#textarea1').val('New Text'); -->
+  <!-- M.textareaAutoResize($('#textarea1')); -->
+
+  <h3>File Input</h3>
+<form action="#">
+  <div class="file-field input-field">
+    <div class="btn">
+      <span>File</span>
+      <input type="file">
+    </div>
+    <div class="file-path-wrapper">
+      <input class="file-path validate" type="text">
+    </div>
+  </div>
+</form>
+
+<h3>Multiple File Uploads</h3>
+<form action="#">
+  <div class="file-field input-field">
+    <div class="btn">
+      <span>File</span>
+      <input type="file" multiple>
+    </div>
+    <div class="file-path-wrapper">
+      <input class="file-path validate" type="text" placeholder="Upload one or more files">
+    </div>
+  </div>
+</form>
+
+<h3>Character Counter</h3>
+<div class="row">
+  <form class="col s12">
+    <div class="row">
+      <div class="input-field col s6">
+        <input id="input_text" type="text" data-length="10">
+        <label for="input_text">Input text</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+        <label for="textarea2">Textarea</label>
+      </div>
+    </div>
+  </form>
+</div>
+
+  <div style="height: 500px;"></div>
+
+
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+    </script>
+  <!--JavaScript at end of body for optimized loading-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <!-- NoUIslider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/11.1.0/nouislider.min.js"></script>
+  <!-- initialisation scripts for -->
+  <script>
+    $(document).ready(function () {
+      // Auto init all
+      // M.AutoInit();
+
+      // slider
+    var slider = document.getElementById('test-slider');
+      noUiSlider.create(slider, {
+      start: [20, 80],
+      connect: true,
+      step: 1,
+      orientation: 'horizontal', // 'horizontal' or 'vertical'
+      range: {
+        'min': 0,
+        'max': 100
+      }
+      });
+
+      // autocomplete
+       $('input.autocomplete').autocomplete({
+          data: {
+            "Apple": 'https://picsum.photos/250/250/?random',
+            "Microsoft": 'https://picsum.photos/250/250/?random',
+            "Google": 'https://picsum.photos/250/250/?random'
+          },
+        });
+
+        // datepicker
+ $('.datepicker').datepicker();
+
+        // select
+ $('select').formSelect();
+        
+        // prefilled input
+ M.updateTextFields();
+
+  // character counter
+ $('input#input_text, textarea#textarea2').characterCounter();
+
+
+
+    });
+  </script>
+</body>
+
+</html>
