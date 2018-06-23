@@ -18,7 +18,7 @@
     <a href="index.html" class="left btn-floating red btn-large waves-effect">
       <i class="material-icons large">arrow_back</i>
     </a>
-
+    <div style="top: 100px; left: 58px; position: fixed">back to CSS</div>
     <div class="center-align"><h1>JAVASCRIPT</h1></div>
 
     <h1>CAROUSEL</h1>
@@ -200,10 +200,13 @@
     <h1>TAP TARGET / Feature Discovery</h1>
 
     <div class="fixed-action-btn" style="bottom:45px;right:24px;">
-      <a id="menu" class="waves-effect waves-light btn btn-floating btn-large cyan">
+      <a id="menu" class="waves-effect waves-light btn btn-floating btn-large cyan" onclick="$('.tap-target').tapTarget('open')">
         <i class="material-icons">menu</i>
       </a>
     </div>
+    
+    <a class="waves-effect waves-light btn cyan" onclick="$('.tap-target').tapTarget('open')">Open Tap Target</a>
+    <a class="waves-effect waves-light btn cyan" onclick="$('.tap-target').tapTarget('close')">Close Tap Target</a>
 
     <!-- tap target content -->
     <div class="tap-target cyan" data-target="menu">
